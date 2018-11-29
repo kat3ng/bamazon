@@ -1,6 +1,11 @@
-var mysql = require("mysql");
+// require inquirer to prompt user
+const inquirer = require('inquirer');
+// require mysql npm to connect to database
+const mysql = require("mysql");
+// Require table npm to create a table in node
+const table = require("table").table;
 
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
     host: "localhost",
 
     // Your port; if not 3306
@@ -16,32 +21,54 @@ var connection = mysql.createConnection({
 
 connection.connect(function (err) {
     if (err) throw err;
-    console.log("connected as id " + connection.threadId);
-    afterConnection();
+    console.log(`We're connected, captain...`);
+    // afterConnection();
+    displayProducts();
 });
 
-function afterConnection() {
+
+function displayProducts() {
     connection.query("SELECT * FROM products", function (err, res) {
-        if (err) throw err;
-        console.log(res);
-        connection.end();
+        for (var i = 0; i < res.length; i++) {
+            console.log(`| ${res[i].id} | ${res[i].product_name}  | ${res[i].department_name} | ${res[i].price}`);
+            console.log(`+--------------------------------------------------------------------|`);
+        }
     });
+    console.log(`displayProducts(), awaiting orders...`);
 }
 
-// Prompt: What is the ID of the item you would like to buy?
-
-// Prompt: How many units would you like to buy?
-
-// Checks stock to ensure we can meet the order
-
-// Adds item to the shoppingCart - .push()
 
 
-// If NO 
-// Stop code
-// console.log("Insufficient quantity!") 
 
-// If YES 
-// Update SQL
-// console.log(`Congrats! You're the proud order of ${shoppingCart}`)
-// console.log(` Your total ${customerTotal}`)
+
+const userOrder = () => {
+    // create an inquirer prompt that asks...
+    // what is the ID of the item you would like to purchase
+    // how many units of that item would you like to purchase?
+    // displayProducts();
+    // checkQuantity();
+    // orderTotal();
+    console.log(`userOrder(), awaiting orders...`);
+}
+
+const checkQuantity = () => {
+    // search quantity
+    // if units in database is >= to userOrder {
+    // console.log(`congrats! We can fill your order`)
+    // item -- in database;
+    // display orderTotal
+    // } else {
+    // console.log(`Insufficient Quantity!`)
+    // userOrder();
+    // }
+    console.log(`checkQuantity(), awaiting orders...`);
+}
+
+let orderTotal = () => {
+    // userOrder  + userOrder = orderTotal
+    console.log(`orderTotal(), awaiting orders...`);
+}
+
+// userOrder();
+// checkQuantity();
+// orderTotal();

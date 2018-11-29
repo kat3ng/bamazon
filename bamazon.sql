@@ -1,23 +1,19 @@
+DROP DATABASE IF EXISTS bamazon_db;
+
 CREATE DATABASE bamazon_db;
 
 USE bamazon_db;
 
-CREATE TABLE products
-(
-    item_id INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE products (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     product_name VARCHAR (255) NULL,
     department_name VARCHAR(255) NOT NULL,
-    price DECIMAL (100,2) NULL,
-    stock_quantity INT NULL, PRIMARY KEY(id)
+    price DECIMAL (10,2) NULL,
+    stock_quantity INT NULL 
 );
 
     INSERT INTO products(product_name, department_name, price, stock_quantity)
-    VALUES
-        ("Left Handed String Lights", "Outdoor Items", 44.99, 10);
-
-    INSERT INTO products(product_name, department_name, price, stock_quantity)
-    VALUES
-        ("Left Handed Electronic Insect Killer", "Outdoor Items", 31.99, 10);
+    VALUES ("Left Handed String Lights", "Outdoor Items", 44.99, 10);
 
     INSERT INTO products(product_name, department_name, price, stock_quantity)
     VALUES
