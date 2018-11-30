@@ -48,16 +48,18 @@ Read more about these methods [here](https://www.npmjs.com/)
 
 3. checkQuantity()
  
- Checks the quantity of the users chosen item and determines if the order can be filled. If it can it executes the updateInventory(), if it cannot it prompts the user to try again. 
+    Checks the quantity of the users chosen item and determines if the order can be filled. If it can it executes the updateInventory(), if it cannot it prompts the user to try again. 
+        
     ![image of checkQuantity](/images/checkQ.png)
 
 4. updateInventory() 
 
-If the user order can be filled, this function updates the inventory.
+    If the user order can be filled, this function updates the inventory.
 
 5. calculateTotal() 
 
-This function calculates the users total for their order and displays it to the console.
+    This function calculates the users total for their order and displays it to the console.
+    
     ![image of calculateTotal()](/images/total.png)
 
 
