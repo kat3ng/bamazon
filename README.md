@@ -38,12 +38,15 @@ Read more about these methods [here](https://www.npmjs.com/)
     Queries the database for all items, departments and prices and displays the to the console using the table module.
 
     ![image of displayThis](/images/displayProd.png)
-    
+
+
+
 2. **userOrder()**
 
    Uses inquirer to prompt the user for an item ID and a quantity and then validates them.
 
     ![image of userOrder](/images/inquirer.png)
+
 
 
 3. **checkQuantity()**
@@ -52,15 +55,21 @@ Read more about these methods [here](https://www.npmjs.com/)
         
     ![image of checkQuantity](/images/checkQ.png)
 
+
+
 4. **updateInventory()**
 
     If the user order can be filled, this function updates the inventory.
+
+
 
 5. **calculateTotal()** 
 
     This function calculates the users total for their order and displays it to the console.
     
     ![image of calculateTotal()](/images/total.png)
+
+
 
 
 ### Notes
