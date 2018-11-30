@@ -8,15 +8,12 @@ const table = require("table").table;
 const connection = mysql.createConnection({
     host: "localhost",
 
-    // Your port; if not 3306
     port: 8889,
 
-    // Your username
     user: "root",
 
-    // Your password
     password: "root",
-    database: "bamazon_db"
+    database: "leftorium_db"
 });
 
 connection.connect(function (err) {
@@ -86,10 +83,10 @@ function userOrder(length) {
 
         }
 
-        function updateInventory() {
-            let query = `UPDATE products SET ${} `
+        // function updateInventory() {
+        //     let query = `UPDATE products SET ${} `
 
-        }
+        // }
 
         function calculateTotal(userQuantity) {
             let query = `SELECT * FROM products where id = ${answers.id}`;

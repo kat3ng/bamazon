@@ -37,21 +37,21 @@ Read more about these methods [here](https://www.npmjs.com/)
 
     Queries the database for all items, departments and prices and displays the to the console using the table module.
 
-    ![image of concertThis](/images/concertThis.png)
+    ![image of displayThis](/images/displayProd.png)
     
 2. userOrder()
 
    Uses inquirer to prompt the user for an item ID and a quantity and then validates them.
 
-    ![image of spotifyThis](/images/spotifyThis.png)
+    ![image of userOrder](/images/inquirer.png)
 
 
 3. checkQuantity()
  
  Checks the quantity of the users chosen item and determines if the order can be filled. If it can it executes the updateInventory(), if it cannot it prompts the user to try again. 
-    ![image of movie-this](/images/movie-this.png)
+    ![image of checkQuantity](/images/checkQ.png)
 
-
+  
 4. updateInventory() 
 
 If the user order can be filled, this function updates the inventory.
@@ -62,7 +62,7 @@ If the user order can be filled, this function updates the inventory.
 
 This function calculates the users total for their order and displays it to the console.
 
-    ![image of do-this](/images/do-this.png)
+    ![image of calculateTotal()] (/images/total.png)
 
 
 ### Notes

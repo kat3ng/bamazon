@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS bamazon_db;
+DROP DATABASE IF EXISTS leftorium_db;
 
-CREATE DATABASE bamazon_db;
+CREATE DATABASE leftorium_db;
 
-USE bamazon_db;
+USE leftorium_db;
 
 CREATE TABLE products (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
