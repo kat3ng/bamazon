@@ -51,20 +51,16 @@ Read more about these methods [here](https://www.npmjs.com/)
  Checks the quantity of the users chosen item and determines if the order can be filled. If it can it executes the updateInventory(), if it cannot it prompts the user to try again. 
     ![image of checkQuantity](/images/checkQ.png)
 
-  
 4. updateInventory() 
 
 If the user order can be filled, this function updates the inventory.
 
-    ![image of do-this](/images/do-this.png)
-
 5. calculateTotal() 
 
 This function calculates the users total for their order and displays it to the console.
-
-    ![image of calculateTotal()] (/images/total.png)
+    ![image of calculateTotal()](/images/total.png)
 
 
 ### Notes
 ---
-This is my first back end project and I am super happy with it. If I were to go back I would probably try to implement node geocoder to translate the coordinates into an address. It might be something that I come back to after the course is finished.
+This is my second back end project and it was much harder than the first!  That being said, it was very rewarding when it all got working. It was a great chance to explore the different modules and practice extracting data from objects and arrays. 
