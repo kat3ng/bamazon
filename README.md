@@ -4,7 +4,6 @@
 - **Developer:** Kat Eng
 - **Deployment Date** 11/29/2018
 - **Built With** Node.js, Javascript, mySQL
-- **Demo**
 
 
 ### Description & Requirements
